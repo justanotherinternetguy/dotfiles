@@ -15,6 +15,7 @@ set esckeys
 " Optimize for terminal connections
 set ttyfast
 
+colorscheme koehler
 
 set number
 set cursorline
@@ -41,3 +42,14 @@ set showmode
 
 set title
 set showcmd
+
+" Special word-document mode
+
+
+func! WordProcessorMode()
+ setlocal textwidth=80
+ setlocal smartindent
+ setlocal spell spelllang=en_us
+ setlocal noexpandtab
+endfu
+com! WP call WordProcessorMode()
