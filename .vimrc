@@ -15,7 +15,7 @@ set esckeys
 " Optimize for terminal connections
 set ttyfast
 
-colorscheme koehler
+colorscheme evening 
 
 set number
 set cursorline
