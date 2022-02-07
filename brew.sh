@@ -64,8 +64,9 @@ brew install --cask codekit
 brew install --cask whatsyoursign
 brew install --cask vimr
 brew install --cask vv
-brew install --cask mouse-fix
-
+brew install kakoune
+brew tap helix-editor/helix
+brew install helix
 
 
 # Formulae
