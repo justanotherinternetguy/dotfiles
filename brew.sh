@@ -64,9 +64,11 @@ brew install --cask codekit
 brew install --cask whatsyoursign
 brew install --cask vimr
 brew install --cask vv
-brew install kakoune
-brew tap helix-editor/helix
-brew install helix
+brew install --cask android-file-transfer
+brew install --cask minecraft
+brew install --cask lunar-client
+
+
 
 
 # Formulae
@@ -81,7 +83,10 @@ brew install wget
 brew install zsh
 brew install amp
 brew install neovim
-
+brew install kakoune
+brew tap helix-editor/helix
+brew install helix
+brew install sn0int
 
 # ending
 brew cleanup
