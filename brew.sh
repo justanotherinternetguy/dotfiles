@@ -13,7 +13,6 @@ brew install moreutils
 brew install findutils
 
 
-
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
@@ -30,6 +29,9 @@ brew install gmp
 
 
 # All casks that I use
+brew install --cask temurin
+brew install --cask angry-ip-scanner
+brew install --cask linkliar
 brew install --cask alt-tab
 brew install --cask app-tamer
 brew install --cask appcleaner
@@ -40,8 +42,8 @@ brew install --cask firefox
 brew install --cask github
 brew install --cask iterm2
 brew install --cask keepassxc
-brew install --cask linkliar
 brew install --cask macvim
+brew install --cask airpass
 brew install --cask malwarebytes
 brew install --cask mechvibes
 brew install --cask metasploit
@@ -50,23 +52,20 @@ brew install --cask protonvpn
 brew install --cask rectangle
 brew install --cask stats
 brew install --cask suspicious-package
-brew install --cask tabby
 brew install --cask tor-browser
 brew install --cask visual-studio-code
 brew install --cask zoom
 brew install --cask raycast
 brew install --cask macs-fan-control
 brew install --cask eul
-brew install --cask responsively
-brew install --cask brackets
 brew install --cask spyder
-brew install --cask codekit
 brew install --cask whatsyoursign
 brew install --cask vimr
-brew install --cask vv
-brew install kakoune
-brew tap helix-editor/helix
-brew install helix
+brew install --cask android-file-transfer
+brew install --cask minecraft
+brew install --cask lunar-client
+
+
 
 
 # Formulae
@@ -81,7 +80,9 @@ brew install wget
 brew install zsh
 brew install amp
 brew install neovim
-
+brew install kakoune
+brew tap helix-editor/helix
+brew install helix
 
 # ending
 brew cleanup
