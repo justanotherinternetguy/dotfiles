@@ -29,6 +29,7 @@ brew install gmp
 
 
 # All casks that I use
+brew install --cask qbittorrent
 brew install --cask temurin
 brew install --cask angry-ip-scanner
 brew install --cask linkliar
@@ -45,7 +46,6 @@ brew install --cask keepassxc
 brew install --cask macvim
 brew install --cask airpass
 brew install --cask malwarebytes
-brew install --cask mechvibes
 brew install --cask metasploit
 brew install --cask obsidian
 brew install --cask protonvpn
@@ -57,13 +57,9 @@ brew install --cask visual-studio-code
 brew install --cask zoom
 brew install --cask raycast
 brew install --cask macs-fan-control
-brew install --cask eul
-brew install --cask spyder
 brew install --cask whatsyoursign
 brew install --cask vimr
 brew install --cask android-file-transfer
-brew install --cask minecraft
-brew install --cask lunar-client
 
 
 
