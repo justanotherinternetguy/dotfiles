@@ -27,58 +27,34 @@ brew install screen
 brew install php
 brew install gmp
 
-
-# All casks that I use
-brew install --cask qbittorrent
-brew install --cask temurin
-brew install --cask angry-ip-scanner
-brew install --cask linkliar
-brew install --cask alt-tab
-brew install --cask app-tamer
-brew install --cask appcleaner
-brew install --cask commander-one
-brew install --cask discord
-brew install --cask epic
-brew install --cask firefox
-brew install --cask github
-brew install --cask iterm2
-brew install --cask keepassxc
-brew install --cask macvim
-brew install --cask airpass
-brew install --cask malwarebytes
-brew install --cask metasploit
-brew install --cask obsidian
-brew install --cask protonvpn
-brew install --cask rectangle
 brew install --cask stats
-brew install --cask suspicious-package
-brew install --cask tor-browser
-brew install --cask visual-studio-code
-brew install --cask zoom
+brew install --cask firefox
+brew install --cask eloston-chromium
+brew install --cask iterm2
 brew install --cask raycast
-brew install --cask macs-fan-control
-brew install --cask whatsyoursign
-brew install --cask vimr
-brew install --cask android-file-transfer
+brew install --cask github
+brew install --cask vv
+brew install --cask keepassxc
+brew install --cask tor-browser
+brew install --cask linkliar
+brew install --cask airpass
+brew install --cask zoom
+brew install --cask discord
+brew install --cask turbo-boost-switcher
+brew install --cask trilium-notes
+brew install --cask pycharm-ce
 
 
-
-
-# Formulae
-brew insatll alexjs
-brew install ansiweather
-brew install exa
-brew install python@3.10
+brew install pyenv-virtualenv
+brew install tor
 brew install pyenv
-brew install nmap
-brew install node
-brew install wget
-brew install zsh
-brew install amp
 brew install neovim
-brew install kakoune
+brew install exa
+brew install amp
+brew install nmap
 brew tap helix-editor/helix
 brew install helix
+brew install --cask oracle-jdk
 
-# ending
+
 brew cleanup
