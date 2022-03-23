@@ -43,7 +43,7 @@ brew install --cask discord
 brew install --cask turbo-boost-switcher
 brew install --cask trilium-notes
 brew install --cask pycharm-ce
-
+brew install --cask lagrange
 
 brew install pyenv-virtualenv
 brew install tor
