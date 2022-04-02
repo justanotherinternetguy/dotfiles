@@ -39,22 +39,20 @@ brew install --cask tor-browser
 brew install --cask linkliar
 brew install --cask airpass
 brew install --cask zoom
-brew install --cask discord
 brew install --cask turbo-boost-switcher
-brew install --cask trilium-notes
 brew install --cask pycharm-ce
-brew install --cask lagrange
+brew install --cask protonvpn
+brew install --cask vimr
+brew install --cask vscodium
+brew install --cask intellij-idea-ce
+brew install --cask emacs
 
-brew install pyenv-virtualenv
+brew install tmux
 brew install tor
-brew install pyenv
 brew install neovim
 brew install exa
-brew install amp
-brew install nmap
 brew tap helix-editor/helix
 brew install helix
-brew install --cask oracle-jdk
-
+brew install gcc
 
 brew cleanup

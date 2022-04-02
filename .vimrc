@@ -1,32 +1,56 @@
+set nocompatible            " disable compatibility to old-time vi
+set guifont=hack:h15
+set showmatch               " show matching
+set ignorecase              " case insensitive
+set mouse=v                 " middle-click paste with
+set hlsearch                " highlight search
+set incsearch               " incremental search
+set tabstop=4               " number of columns occupied by a tab
+set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
+set expandtab               " converts tabs to white space
+set shiftwidth=4            " width for autoindents
+set autoindent              " indent a new line the same amount as the line just typed
+set number                  " add line numbers
+set wildmode=longest,list   " get bash-like tab completions
 
-" Ignore capital letters during search.
-set ignorecase
 
-" Override the ignorecase option if searching for capital letters.
-" This will allow you to search specifically for capital letters.
-set smartcase
+filetype plugin indent on   "allow auto-indenting depending on file type
+syntax on                   " syntax highlighting
+set mouse=a                 " enable mouse click
+set clipboard=unnamedplus   " using system clipboard
+filetype plugin on
+set cursorline              " highlight current cursorline
+set ttyfast                 " Speed up scrolling in Vim
 
-" Show partial command you type in the last line of the screen.
+
+" set noswapfile            " disable creating swap file
+set backupdir=~/.cache/vim " Directory to store backup files.
+colorscheme evening
+set splitright
+set splitbelow
+
+set title
+set ruler
+set secure
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list
 set showcmd
 
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+augroup END
 
-" Show the mode you are on the last line.
+autocmd BufWritePre * :%s/\s\+$//e
+
+set showbreak=>\ \ \
+set linebreak
+
+set smartcase
+
 set showmode
 
-" Show matching words during a search.
-set showmatch
-
-" Set the commands to save in history default number is 20.
-set history=1000
-
-" Enable auto completion menu after pressing TAB.
-set wildmenu
-
-" Make wildmenu behave like similar to Bash completion.
-set wildmode=list:longest
-
-" There are certain files that we would never want to edit with Vim.
-" Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 
@@ -59,7 +83,7 @@ nnoremap Y y$
 " !python3 % executes the current file with Python.
 nnoremap <f5> :w <CR>:!clear <CR>:!python % <CR>
 nnoremap <f6> :w <CR>:!clear <CR>:!clang++ --std=c++17 % <CR>
-
+nnoremap <f7> :w <CR>:!clear <CR>:!java % <CR>
 
 nnoremap <f2> :noh <CR>
 
@@ -87,6 +111,7 @@ nnoremap <F3> :NERDTreeToggle<cr>
 let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.db$']
 
 " }}}
+
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
 
@@ -135,4 +160,3 @@ set statusline+=%=
 set laststatus=2
 
 " }}}
-
