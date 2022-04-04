@@ -46,6 +46,9 @@ brew install --cask vimr
 brew install --cask vscodium
 brew install --cask intellij-idea-ce
 brew install --cask emacs
+brew install --cask joplin
+brew install --cask appgrid
+brew install --cask min
 
 brew install tmux
 brew install tor
