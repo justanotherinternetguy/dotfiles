@@ -8,7 +8,7 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-
+brew install coreutils
 brew install moreutils
 brew install findutils
 
@@ -33,7 +33,6 @@ brew install --cask eloston-chromium
 brew install --cask iterm2
 brew install --cask raycast
 brew install --cask github
-brew install --cask vv
 brew install --cask keepassxc
 brew install --cask tor-browser
 brew install --cask linkliar
@@ -47,8 +46,9 @@ brew install --cask vscodium
 brew install --cask intellij-idea-ce
 brew install --cask emacs
 brew install --cask joplin
-brew install --cask appgrid
-brew install --cask min
+brew install --cask virtualbox
+brew install --cask coteditor
+
 
 brew install tmux
 brew install tor
@@ -56,6 +56,8 @@ brew install neovim
 brew install exa
 brew tap helix-editor/helix
 brew install helix
+brew install node
 brew install gcc
+
 
 brew cleanup
