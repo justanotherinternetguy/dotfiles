@@ -114,6 +114,7 @@ alias all="brew upgrade && brew update && brew doctor && brew cleanup"
 alias code="codium"
 alias c="cot"
 alias comp="g++-11 -Wall -O2 -std=c++11"
+alias ee="emacs"
 
 
 export PATH="/usr/local/sbin:$PATH"

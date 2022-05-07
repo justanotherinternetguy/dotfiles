@@ -45,9 +45,7 @@ brew install --cask vimr
 brew install --cask vscodium
 brew install --cask intellij-idea-ce
 brew install --cask emacs
-brew install --cask joplin
 brew install --cask virtualbox
-brew install --cask coteditor
 
 
 brew install tmux
