@@ -1,10 +1,11 @@
-call plug#begin()
-Plug 'tpope/vim-sensible'
-Plug 'scrooloose/nerdtree'
-call plug#end()
+" call plug#begin()
+" Plug 'tpope/vim-sensible'
+" Plug 'scrooloose/nerdtree'
+" call plug#end()
 
 " Fundamentals "{{{
 " ---------------------------------------------------------------------
+colorscheme desert
 
 " init autocmd
 autocmd!
@@ -18,7 +19,6 @@ set number
 set ruler
 syntax enable
 set secure
-set fileencodings=utf-8,sjis,euc-jp,latin
 set encoding=utf-8
 set title
 set autoindent
@@ -67,9 +67,6 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " Turn off paste mode when leaving insert
 autocmd InsertLeave * set nopaste
-
-" Add asterisks in block comments
-set formatoptions+=r
 "}}}
 
 " Mappings " {{{
@@ -92,19 +89,15 @@ nnoremap N Nzz
 " Yank from cursor to the end of line.
 nnoremap Y y$
 
-" Map the F5 key to run a Python script inside Vim.
-" We map F5 to a chain of commands here.
-" :w saves the file.
-" <CR> (carriage return) is like pressing the enter key.
-" !clear runs the external clear screen command.
-" !python3 % executes the current file with Python.
-nnoremap <f5> :w <CR>:!clear <CR>:!python % <CR>
-nnoremap <f6> :w <CR>:!clear <CR>:!clang++ --std=c++17 % <CR>
+
+
+nnoremap <f5> :w <CR>:!clear <CR>:!python3 % <CR>
+nnoremap <f6> :w <CR>:!clear <CR>:!g++-11 -Wall -Wextra -Wshadow -fsanitize=undefined -O2 -std=c++17 % <CR>
 nnoremap <f7> :w <CR>:!clear <CR>:!java % <CR>
+nnoremap <f8> :w <CR>:!clear <CR>:!rustc % <CR>
+
 
 nnoremap <f2> :noh <CR>
-
-
 
 " You can split the window in Vim by typing :split or :vsplit.
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
@@ -119,13 +112,6 @@ noremap <c-up> <c-w>+
 noremap <c-down> <c-w>-
 noremap <c-left> <c-w>>
 noremap <c-right> <c-w><
-
-" NERDTree specific mappings.
-" Map the F3 key to toggle NERDTree open and close.
-nnoremap <F3> :NERDTreeToggle<cr>
-
-" Have nerdtree ignore certain files and directories.
-let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.db$']
 
 " }}}
 
@@ -154,23 +140,9 @@ endif
 
 " File types "{{{
 " ---------------------------------------------------------------------
-" JavaScript
-au BufNewFile,BufRead *.es6 setf javascript
-" TypeScript
-au BufNewFile,BufRead *.tsx setf typescriptreact
 " Markdown
 au BufNewFile,BufRead *.md set filetype=markdown
 au BufNewFile,BufRead *.mdx set filetype=markdown
-" Flow
-au BufNewFile,BufRead *.flow set filetype=javascript
-" Fish
-au BufNewFile,BufRead *.fish set filetype=fish
-
-set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
-
-autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
-autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 
 "}}}
 
@@ -202,10 +174,6 @@ if exists("&termguicolors") && exists("&winblend")
   set wildoptions=pum
   set pumblend=5
   set background=dark
-  " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
 endif
 
 "}}}

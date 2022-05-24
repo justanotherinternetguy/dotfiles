@@ -113,9 +113,14 @@ alias t="touch"
 alias all="brew upgrade && brew update && brew doctor && brew cleanup"
 alias code="codium"
 alias c="cot"
-alias comp="g++-11 -Wall -O2 -std=c++11"
+alias comp="g++-11 -Wall -Wextra -Wshadow -fsanitize=undefined -O2 -std=c++17"
 alias ee="emacs"
-
+alias cpy="cp ~/Documents/Github/CS-Resources/Templates/Template.cpp ."
+alias sfml="g++ -I/usr/local/Cellar/sfml/2.5.1_1/include/ -L/usr/local/Cellar/sfml/2.5.1_1/lib/ -lsfml-graphics -lsfml-window -lsfml-system"
 
 export PATH="/usr/local/sbin:$PATH"
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -46,8 +46,11 @@ brew install --cask vscodium
 brew install --cask intellij-idea-ce
 brew install --cask emacs
 brew install --cask virtualbox
+brew install --cask element
 
 
+brew install sdl2
+brew install sfml
 brew install tmux
 brew install tor
 brew install neovim
@@ -56,6 +59,8 @@ brew tap helix-editor/helix
 brew install helix
 brew install node
 brew install gcc
+brew install rust
+brew install nvm
 
 
 brew cleanup
