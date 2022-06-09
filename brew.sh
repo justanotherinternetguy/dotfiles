@@ -47,9 +47,25 @@ brew install --cask intellij-idea-ce
 brew install --cask emacs
 brew install --cask virtualbox
 brew install --cask element
+brew install --cask processing
 
+brew install amp
+brew install micro
+brew install kakoune
+
+# cargo install zee
+# sudo npm install -g slap@latest
+# npm i -g md-to-pdf
+
+
+# other langs
+brew install julia
+brew install clojure
+brew install elixir
+brew install zig
 
 brew install sdl2
+brew install nim
 brew install sfml
 brew install tmux
 brew install tor
@@ -61,6 +77,6 @@ brew install node
 brew install gcc
 brew install rust
 brew install nvm
-
+brew install --cask qbittorrent
 
 brew cleanup
