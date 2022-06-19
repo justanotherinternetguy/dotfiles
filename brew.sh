@@ -51,7 +51,7 @@ brew install --cask processing
 brew install amp
 brew install micro
 brew install kakoune
-brew install openjdk
+brew install openjdk@17
 # cargo install zee
 # sudo npm install -g slap@latest
 # npm i -g md-to-pdf
@@ -59,7 +59,6 @@ brew install --cask appcleaner
 
 # other langs
 brew install julia
-brew install clojure
 brew install elixir
 brew install ghc
 brew install sdl2
