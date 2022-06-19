@@ -22,15 +22,14 @@ brew install gnupg
 
 brew install vim
 brew install grep
-brew install openssh
 brew install screen
 brew install php
 brew install gmp
 
-brew install --cask stats
-brew install --cask firefox
-brew install --cask eloston-chromium
-brew install --cask iterm2
+# brew install --cask stats
+# brew install --cask firefox
+# brew install --cask eloston-chromium
+# brew install --cask iterm2
 brew install --cask raycast
 brew install --cask github
 brew install --cask keepassxc
@@ -52,18 +51,17 @@ brew install --cask processing
 brew install amp
 brew install micro
 brew install kakoune
-
+brew install openjdk
 # cargo install zee
 # sudo npm install -g slap@latest
 # npm i -g md-to-pdf
-
+brew install --cask appcleaner
 
 # other langs
 brew install julia
 brew install clojure
 brew install elixir
-brew install zig
-
+brew install ghc
 brew install sdl2
 brew install nim
 brew install sfml
@@ -77,6 +75,8 @@ brew install node
 brew install gcc
 brew install rust
 brew install nvm
-brew install --cask qbittorrent
-
+brew tap homebrew/cask-fonts
+brew install --cask font-iosevka
+brew install thefuck
+# brew install --cask spotify
 brew cleanup
