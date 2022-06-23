@@ -1,8 +1,15 @@
-set cul
+call plug#begin()
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'https://github.com/zah/nim.vim'
+call plug#end()
+let g:python3_host_prog="/usr/local/opt/python@3.10/bin/python3"
 
 set wrap
 set linebreak
-
+au BufWrite * :Autoformat
 
 set splitbelow
 set splitright
@@ -54,6 +61,9 @@ nnoremap N Nzz
 " Yank from cursor to the end of line.
 nnoremap Y y$
 nnoremap <f2> :noh <CR>
+nnoremap <f3> :NERDTreeToggle <CR>
+
+
 
 " You can split the window in Vim by typing :split or :vsplit.
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
@@ -62,33 +72,15 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
-" Resize split windows using arrow keys by pressing:
-" CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
-noremap <c-up> <c-w>+
-noremap <c-down> <c-w>-
-noremap <c-left> <c-w>>
-noremap <c-right> <c-w><
+nnoremap <c-n> <c-w>:tabnew
+nnoremap <c-a> <c-w>:tabn <CR>
+nnoremap <c-w> <c-w>:tabclose <CR>
+
+
+
 set cursorline
-
-
-set statusline=
-
-" Status line left side.
-set statusline+=\ %F\ %M\ %Y\ %R
-
-" Use a divider to separate the left side from the right side.
-set statusline+=%=
-
-" Status line right side.
-set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
-
-" Show the status on the second to last line.
-set laststatus=2
-
-set exrc
-
+set number
 let mapleader = ","
-
 " Fast saving
 nmap <leader>w :w!<cr>
 
